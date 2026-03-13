@@ -31,6 +31,34 @@ We also provide a **comprehensive annotation guideline** that can facilitate fut
 Experimental results show that the **late fusion of textual (mBERT) and visual (ViT) models (ViT + mBERT)** achieves the best performance with an **F1-score of 90.91**, significantly outperforming other baseline models.
 
 ---
+## 📑 Citation  
+If you use this dataset or paper, please cite it as follows:
+
+```bibtex
+@inproceedings{shanto-etal-2025-mdc3,
+    title = "{MDC}$^3$: A Novel Multimodal Dataset for Commercial Content Classification in {B}engali",
+    author = "Shanto, Anik Mahmud and
+              Priya, Mst. Sanjida Jamal and
+              Tamim, Fahim Shakil and
+              Hoque, Mohammed Moshiul",
+    editor = "Ebrahimi, Abteen and
+              Haider, Samar and
+              Liu, Emmy and
+              Haider, Sammar and
+              Leonor Pacheco, Maria and
+              Wein, Shira",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 4: Student Research Workshop)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-srw.31/",
+    pages = "311--320",
+    ISBN = "979-8-89176-192-6",
+    abstract = "Identifying commercial posts in resource-constrained languages among diverse and unstructured content remains a significant challenge for automatic text classification tasks. To address this, this work introduces a novel dataset named MDC$^3$ (Multimodal Dataset for Commercial Content Classification), comprising 5,007 annotated Bengali social media posts classified as commercial and noncommercial. A comprehensive annotation guideline accompanying the dataset is included to aid future dataset creation in resource-constrained languages. Furthermore, we performed extensive experiments on MDC$^3$ considering both unimodal and multimodal domains. Specifically, the late fusion of textual (mBERT) and visual (ViT) models (i.e., ViT+mBERT) achieves the highest F1 score of 90.91, significantly surpassing other baselines."
+}
+
+---
 
 # 🧠 TSFC: A Hierarchical Classification Framework for Multimodal Commercial Contents in Bengali
 
