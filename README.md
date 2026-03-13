@@ -1,45 +1,91 @@
-# MDC<sup>3</sup>: A Novel Multimodal Dataset for Commercial Content Classification in Bengali
+# MDC³ & TSFC: Multimodal Commercial Content Classification in Bengali
 
-### Authors  
-**Anik Mahmud Shanto, Mst. Sanjida Jamal Priya, Fahim Shakil Tamim, Mohammed Moshiul Hoque**  
-📅 **Date:** April, 2025  
-🔗 **Venue:** [https://aclanthology.org/volumes/2025.naacl-srw/]
+This repository contains resources related to two research works on **multimodal commercial content classification for Bengali social media**.
 
----
+1. **MDC³ Dataset** – A multimodal dataset of Bengali social media posts.  
+2. **TSFC Model** – A hierarchical multimodal classification framework using cross-attention.
 
-## 📜 Abstract  
-Identifying commercial posts in resource-constrained languages among diverse and unstructured content remains a significant challenge for automatic text classification tasks. To address this, this work introduces a novel dataset named **MDC<sup>3</sup>** (Multimodal Dataset for Commercial Content Classification), comprising **5,007 annotated Bengali social media posts** classified as commercial and noncommercial.  
-
-A **comprehensive annotation guideline** accompanying the dataset is included to aid future dataset creation in resource-constrained languages. Furthermore, we performed **extensive experiments** on MDC<sup>3</sup> considering both unimodal and multimodal domains. Specifically, the late fusion of textual (**mBERT**) and visual (**ViT**) models (**ViT+mBERT**) achieves the highest **F1 score of 90.91**, significantly surpassing other baselines.
+These works aim to advance **multimodal NLP research for low-resource languages**, particularly **Bengali**, by providing datasets and models for **commercial content detection and categorization**.
 
 ---
 
-## 📄 Paper Link  
-Access the full paper here:  
-🔗 [MDC<sup>3</sup>: A Novel Multimodal Dataset for Commercial Content Classification in Bengali](https://aclanthology.org/2025.naacl-srw.31/)
+# 📊 MDC³: A Novel Multimodal Dataset for Commercial Content Classification in Bengali
+
+### Authors
+**Anik Mahmud Shanto, Mst. Sanjida Jamal Priya, Fahim Shakil Tamim, Mohammed Moshiul Hoque**
+
+📅 **Publication:** April 2025  
+📍 **Venue:** NAACL Student Research Workshop (NAACL-SRW 2025)
+
+🔗 **Paper:**  
+https://aclanthology.org/2025.naacl-srw.31/
 
 ---
 
-# TSFC: A Hierarchical Classification Framework for Multimodal Commercial Contents in Bengali
+## 📜 Abstract
 
-### Authors  
-**Anik Mahmud Shanto, Fahim Shakil Tamim, Mst. Sanjida Jamal Priya, Mohammed Moshiul Hoque, Enamul Hoque Prince**  
-📅 **Date:** January, 202  
-🔗 **Venue:** IEEE Access
+Identifying commercial posts in resource-constrained languages among diverse and unstructured content remains a significant challenge for automatic text classification tasks. To address this problem, we introduce **MDC³ (Multimodal Dataset for Commercial Content Classification)**, a novel dataset consisting of **5,007 annotated Bengali social media posts**, categorized into **commercial** and **non-commercial** classes.
+
+We also provide a **comprehensive annotation guideline** that can facilitate future dataset creation for resource-constrained languages. Furthermore, we conduct extensive experiments on MDC³ considering both **unimodal and multimodal approaches**.
+
+Experimental results show that the **late fusion of textual (mBERT) and visual (ViT) models (ViT + mBERT)** achieves the best performance with an **F1-score of 90.91**, significantly outperforming other baseline models.
+
+---
+
+# 🧠 TSFC: A Hierarchical Classification Framework for Multimodal Commercial Contents in Bengali
+
+### Authors
+**Anik Mahmud Shanto, Fahim Shakil Tamim, Mst. Sanjida Jamal Priya, Mohammed Moshiul Hoque, Enamul Hoque Prince**
+
+📅 **Publication:** 2026  
+📍 **Venue:** IEEE Access (Q1 Journal)
+
+🔗 **Paper:**  
+https://ieeexplore.ieee.org/document/11369232
 
 ---
 
-## 📜 Abstract  
-Social media has become a crucial platform for businesses to promote their products, significantly affecting consumer behavior and advertising success. Automatically identifying commercial content in the diverse social media landscape is vital for targeted advertising and brand monitoring. Despite significant progress in multimodal content classification for high-resource languages (HRLs) in recent years, similar advancements in domain-specific tasks for low-resource languages (LRLs) remain in their infancy. This paper introduces ***MHDC<sup>3<sup> (Multimodal Hierarchical Dataset for Commercial Content Classification)***, a novel dataset comprising 5,007 Bengali-language social media posts, primarily categorized into commercial(Com) and non-commercial(NCom) classes. In addition to binary classification, this work expands the task to fine-grained categorization, dividing commercial posts into four distinct categories: Fashion(Fa), Food(Fo), Lifestyle(LS), and Trends and Tech(T&T). This paper proposes ***TSFC (TextSelf-FusionCross)***, a cross-attention-based multimodal model designed to address both coarse-grained and fine-grained classification tasks. TSFC employs self-attention over textual features and subsequently fuses them with visual representations via a cross-attention mechanism, enabling comprehensive integration of multimodal cues. Extensive experiments with MHDC3 demonstrate that TSFC outperforms several state-of-the-art multimodal baselines, achieving the highest F1-score of 94.38% (coarse-grained classification) and 94.80% (fine-grained classification). These results highlight the efficacy of attention-based multimodal fusion for detecting commercial content in languages like Bengali.
+## 📜 Abstract
+
+Social media has become a crucial platform for businesses to promote products, significantly influencing consumer behavior and advertising effectiveness. Automatically identifying commercial content from diverse social media posts is essential for targeted advertising and brand monitoring.
+
+Although multimodal content classification has progressed significantly for **high-resource languages**, similar research for **low-resource languages such as Bengali** remains limited.
+
+To address this gap, we introduce **MHDC³ (Multimodal Hierarchical Dataset for Commercial Content Classification)**, which extends MDC³ to support **hierarchical classification**.
+
+The dataset contains **5,007 Bengali social media posts**, categorized into:
+
+### Level 1 (Coarse-grained)
+- Commercial (Com)
+- Non-commercial (NCom)
+
+### Level 2 (Fine-grained commercial categories)
+- Fashion (Fa)
+- Food (Fo)
+- Lifestyle (LS)
+- Trends & Technology (T&T)
+
+To solve this task, we propose **TSFC (Text-Self-Fusion-Cross)**, a **cross-attention-based multimodal model**. The architecture first performs **self-attention on textual features**, followed by **cross-modal fusion with visual representations**.
+
+Extensive experiments demonstrate that TSFC outperforms several state-of-the-art multimodal baselines, achieving:
+
+- **94.38% F1-score for coarse-grained classification**
+- **94.80% F1-score for fine-grained classification**
+
 ---
 
-## 📄 Paper Link  
-Access the full paper here:  
-🔗 [TSFC: A Hierarchical Classification Framework for Multimodal Commercial Contents in Bengali](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11369232)
+# 📂 Dataset Overview
+
+| Dataset | Language | Samples | Modalities | Tasks |
+|--------|----------|--------|-----------|------|
+| MDC³ | Bengali | 5,007 | Image + Text | Binary classification |
+| MHDC³ | Bengali | 5,007 | Image + Text | Hierarchical classification |
 
 ---
-## 📑 Citation  
-If you use this dataset or paper, please cite it as follows:
+
+# 📑 Citation
+
+If you use this dataset or model in your research, please cite the following paper.
 
 ```bibtex
 @ARTICLE{11369232,
@@ -48,8 +94,6 @@ If you use this dataset or paper, please cite it as follows:
   title={TSFC: A Hierarchical Classification Framework for Multimodal Commercial Contents in Bengali}, 
   year={2026},
   volume={14},
-  number={},
   pages={28411-28434},
-  keywords={Social networking (online);Accuracy;Advertising;Web sites;Multimedia communication;Market research;Reviews;Computer science;Visualization;Videos;Natural language processing;multimodal content classification;cross-attention;commercial content classification;multimodal fusion},
-  doi={10.1109/ACCESS.2026.3659712}}
-
+  doi={10.1109/ACCESS.2026.3659712}
+}
