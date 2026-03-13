@@ -1,122 +1,55 @@
-# 👺 Multimodal Hate Speech Detection in Bengali
+# MDC<sup>3</sup>: A Novel Multimodal Dataset for Commercial Content Classification in Bengali
 
+### Authors  
+**Anik Mahmud Shanto, Mst. Sanjida Jamal Priya, Fahim Shakil Tamim, Mohammed Moshiul Hoque**  
+📅 **Date:** April, 2025  
+🔗 **Venue:** [https://aclanthology.org/volumes/2025.naacl-srw/]
 
-📢 **Paper Release**
+---
 
-**Align before Attend: Aligning Visual and Textual Features for Multimodal Hateful Content Detection** (EACL-SRW, 2024) [[Paper](https://aclanthology.org/2024.eacl-srw.12/)] [[Code](https://github.com/eftekhar-hossain/Bengali-Hateful-Memes/tree/main/Align-Before-Attend%40EACL)]  <br>
-[Eftekhar Hossain*](https://eftekhar-hossain.github.io/), [Omar Sharif*](https://omar-sharif03.github.io/), [Mohammed Moshiul Hoque](https://scholar.google.com/citations?user=srYxYhcAAAAJ&hl=en), [Sarah M Preum](https://persist-lab.github.io/portfolio/) (*Equal Contribution)
+## 📜 Abstract  
+Identifying commercial posts in resource-constrained languages among diverse and unstructured content remains a significant challenge for automatic text classification tasks. To address this, this work introduces a novel dataset named **MDC<sup>3</sup>** (Multimodal Dataset for Commercial Content Classification), comprising **5,007 annotated Bengali social media posts** classified as commercial and noncommercial.  
 
-**Deciphering Hate: Identifying Hateful Memes and Their Targets** (ACL, 2024) [[Paper](https://arxiv.org/abs/2403.10829)] [[Code](https://github.com/eftekhar-hossain/Bengali-Hateful-Memes/tree/main/Deciphering-Hate%40ACL)] 🔥 <br>
-[Eftekhar Hossain](https://eftekhar-hossain.github.io/), [Omar Sharif](https://omar-sharif03.github.io/), [Mohammed Moshiul Hoque](https://scholar.google.com/citations?user=srYxYhcAAAAJ&hl=en), [Sarah M Preum](https://persist-lab.github.io/portfolio/)
+A **comprehensive annotation guideline** accompanying the dataset is included to aid future dataset creation in resource-constrained languages. Furthermore, we performed **extensive experiments** on MDC<sup>3</sup> considering both unimodal and multimodal domains. Specifically, the late fusion of textual (**mBERT**) and visual (**ViT**) models (**ViT+mBERT**) achieves the highest **F1 score of 90.91**, significantly surpassing other baselines.
 
-🪲<ins>**Check out another interesting work**</ins> 
+---
 
-**A Multimodal Framework to Detect Target-Aware Aggression in Memes** (EACL, 2024) [[Paper](https://aclanthology.org/2024.eacl-long.153/)] [[Code](https://github.com/shawlyahsan/Bengali-Aggression-Memes)]⚡ <br>
+## 📄 Paper Link  
+Access the full paper here:  
+🔗 [MDC<sup>3</sup>: A Novel Multimodal Dataset for Commercial Content Classification in Bengali](https://aclanthology.org/2025.naacl-srw.31/)
 
+---
 
+# TSFC: A Hierarchical Classification Framework for Multimodal Commercial Contents in Bengali
 
-----
-## ♨️Deciphering Hate (ACL'24)
+### Authors  
+**Anik Mahmud Shanto, Fahim Shakil Tamim, Mst. Sanjida Jamal Priya, Mohammed Moshiul Hoque, Enamul Hoque Prince**  
+📅 **Date:** January, 202  
+🔗 **Venue:** IEEE Access
 
-Internet memes have become a powerful means for individuals to express emotions, thoughts, and perspectives on social media. While often considered a source of humor and entertainment, memes can also disseminate hateful content targeting individuals or communities. Most existing research focuses on the negative aspects of memes in high-resource languages, overlooking the distinctive challenges associated with low-resource languages like Bengali (also known as Bangla). Furthermore, while previous work on Bengali memes has focused on detecting hateful memes, there has been no work on detecting their targeted entities. To bridge this gap and facilitate research in this arena, we introduce a novel multimodal dataset for Bengali, **BHM (Bengali Hateful Memes)**. The dataset consists of 7,148 memes with Bengali as well as code-mixed captions, tailored for two tasks: (i) detecting hateful memes and (ii) detecting the social entities they target (i.e., Individual, Organization, Community, and Society). To solve these tasks, we propose **DORA (Dual cO -attention fRAmework)**, a multimodal deep neural network that systematically extracts the significant modality features from the memes and jointly evaluates them with the modality-specific features to understand the context better. Our experiments show that DORA is generalizable on other low-resource hateful meme datasets and outperforms several state-of-the-art rivaling baselines. 
+---
 
-<p align="center">
-    <a href="https://llava.hliu.cc/"><img src="Images/bhm-block.png" width="70%"></a> <br>
-    The method proposed in Deciphering Hate Paper.
-</p>
+## 📜 Abstract  
+Social media has become a crucial platform for businesses to promote their products, significantly affecting consumer behavior and advertising success. Automatically identifying commercial content in the diverse social media landscape is vital for targeted advertising and brand monitoring. Despite significant progress in multimodal content classification for high-resource languages (HRLs) in recent years, similar advancements in domain-specific tasks for low-resource languages (LRLs) remain in their infancy. This paper introduces ***MHDC<sup>3<sup> (Multimodal Hierarchical Dataset for Commercial Content Classification)***, a novel dataset comprising 5,007 Bengali-language social media posts, primarily categorized into commercial(Com) and non-commercial(NCom) classes. In addition to binary classification, this work expands the task to fine-grained categorization, dividing commercial posts into four distinct categories: Fashion(Fa), Food(Fo), Lifestyle(LS), and Trends and Tech(T&T). This paper proposes ***TSFC (TextSelf-FusionCross)***, a cross-attention-based multimodal model designed to address both coarse-grained and fine-grained classification tasks. TSFC employs self-attention over textual features and subsequently fuses them with visual representations via a cross-attention mechanism, enabling comprehensive integration of multimodal cues. Extensive experiments with MHDC3 demonstrate that TSFC outperforms several state-of-the-art multimodal baselines, achieving the highest F1-score of 94.38% (coarse-grained classification) and 94.80% (fine-grained classification). These results highlight the efficacy of attention-based multimodal fusion for detecting commercial content in languages like Bengali.
+---
 
-### Dataset 👉 [[Link](https://drive.google.com/file/d/1uftdZXcf00X2MQVb8UUcRMaIor7Pfd1w/view?usp=sharing)]
+## 📄 Paper Link  
+Access the full paper here:  
+🔗 [TSFC: A Hierarchical Classification Framework for Multimodal Commercial Contents in Bengali](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11369232)
 
-#### How to Load using Python
-   
-```python
-import gdown
+---
+## 📑 Citation  
+If you use this dataset or paper, please cite it as follows:
 
-# Replace 'YOUR_FILE_ID' with the actual file ID from the Google Drive link.
-gdown.download("https://drive.google.com/uc?export=download&id=1uftdZXcf00X2MQVb8UUcRMaIor7Pfd1w", "file.zip", quiet=False)
-```
-After running the cell, the dataset will be downloaded as **file.zip**
-
-#### Unzip the file.zip
-
-```python
-import zipfile
-zip_ref = zipfile.ZipFile("file.zip", 'r')
-zip_ref.extractall()
-zip_ref.close()
-```
-
-#### How to Run 🤝
-Please check out our [instructions](https://github.com/eftekhar-hossain/Bengali-Hateful-Memes/tree/main/Deciphering-Hate%40ACL) to run the model on the **BHM** dataset.
-
-----
-
-## 🌴Align before Attend (EACL'24)
-
-Multimodal hateful content detection is a challenging task that requires complex reasoning across visual and textual modalities. Therefore, creating a meaningful multimodal representation that effectively captures the interplay between visual and textual features through intermediate fusion is critical. Conventional fusion techniques are unable to attend to the modality-specific features effectively. Moreover, most studies exclusively concentrated on English and overlooked other low-resource languages. We propose a **context-aware attention** framework for multimodal hateful content detection and assess it for both English and non-English languages. The proposed approach incorporates an **attention layer** to meaningfully align the visual and textual features. This alignment enables selective focus on modality-specific features before fusing them. The proposed performs superiorly on two benchmark hateful meme datasets, viz. **MUTE (Bengali code-mixed)** and **MultiOFF (English)**. 
-
-<p align="center">
-    <a href="https://llava.hliu.cc/"><img src="Images/align-attend.png" width="70%"></a> <br>
-    The method proposed in Align before Attend Paper.
-</p>
-
-### Datasets
-[MUTE](https://github.com/eftekhar-hossain/MUTE-AACL22) (Bengali Hateful Memes Dataset) <br> 
-[MultiOFF](https://github.com/bharathichezhiyan/Multimodal-Meme-Classification-Identifying-Offensive-Content-in-Image-and-Text) (English Offensive Memes Dataset)
-
-#### How to Run 🤝
-Please check out our [instructions](https://github.com/eftekhar-hossain/Bengali-Hateful-Memes/tree/main/Align-Before-Attend%40EACL) to run the model and its variants on a multimodal dataset.  
-
-----
-
-
-## 🐧Related Papers
-- **A Multimodal Framework to Detect Target Aware Aggression in Memes** (*EACL'24*) [[Paper](https://aclanthology.org/2024.eacl-long.153/)] [[Dataset](https://github.com/shawlyahsan/Bengali-Aggression-Memes)]
-- **MUTE: A Multimodal Dataset for Detecting Hateful Memes** (*AACL'22*) [[Paper](https://aclanthology.org/2022.aacl-srw.5/)] [[Code](https://github.com/eftekhar-hossain/MUTE-AACL22)]
-- **MemoSen: A Multimodal Dataset for Sentiment Analysis of Memes** (*LREC'22*) [[Paper](https://aclanthology.org/2022.lrec-1.165/)] [[Code](https://github.com/eftekhar-hossain/MemoSen-LREC2022)]
-
-
-## Citation
-
-If you find our works useful for your research and applications, please cite using this BibTeX:
 ```bibtex
+@ARTICLE{11369232,
+  author={Shanto, Anik Mahmud and Tamim, Fahim Shakil and Priya, Mst. Sanjida Jamal and Hoque, Mohammed Moshiul and Prince, Enamul Hoque},
+  journal={IEEE Access}, 
+  title={TSFC: A Hierarchical Classification Framework for Multimodal Commercial Contents in Bengali}, 
+  year={2026},
+  volume={14},
+  number={},
+  pages={28411-28434},
+  keywords={Social networking (online);Accuracy;Advertising;Web sites;Multimedia communication;Market research;Reviews;Computer science;Visualization;Videos;Natural language processing;multimodal content classification;cross-attention;commercial content classification;multimodal fusion},
+  doi={10.1109/ACCESS.2026.3659712}}
 
-@article{hossain2024deciphering,
-  title={Deciphering Hate: Identifying Hateful Memes and Their Targets},
-  author={Hossain, Eftekhar and Sharif, Omar and Hoque, Mohammed Moshiul and Preum, Sarah M},
-  journal={arXiv preprint arXiv:2403.10829},
-  year={2024}
-}
-
-@article{hossain2024align,
-  title={Align before Attend: Aligning Visual and Textual Features for Multimodal Hateful Content Detection},
-  author={Hossain, Eftekhar and Sharif, Omar and Hoque, Mohammed Moshiul and Preum, Sarah M},
-  journal={arXiv preprint arXiv:2402.09738},
-  year={2024}
-}
-
-@inproceedings{ahsan2024multimodal,
-  title={A Multimodal Framework to Detect Target Aware Aggression in Memes},
-  author={Ahsan, Shawly and Hossain, Eftekhar and Sharif, Omar and Das, Avishek and Hoque, Mohammed Moshiul and Dewan, M},
-  booktitle={Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)},
-  pages={2487--2500},
-  year={2024}
-}
-
-@inproceedings{hossain2022mute,
-  title={Mute: A multimodal dataset for detecting hateful memes},
-  author={Hossain, Eftekhar and Sharif, Omar and Hoque, Mohammed Moshiul},
-  booktitle={Proceedings of the 2nd conference of the asia-pacific chapter of the association for computational linguistics and the 12th international joint conference on natural language processing: student research workshop},
-  pages={32--39},
-  year={2022}
-}
-
-@inproceedings{hossain2022memosen,
-  title={Memosen: A multimodal dataset for sentiment analysis of memes},
-  author={Hossain, Eftekhar and Sharif, Omar and Hoque, Mohammed Moshiul},
-  booktitle={Proceedings of the Thirteenth Language Resources and Evaluation Conference},
-  pages={1542--1554},
-  year={2022}
-}
-
-```
